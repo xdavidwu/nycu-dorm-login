@@ -3,7 +3,7 @@
 printf 'Date\t\tAll\tTx\tRx (Byte)'
 printf '\nToday\t'
 
-curl 'https://dorm.nctu.edu.tw/login_online_detail.php?login_page=/auth_entry.php?authmeth=7' 2>&1 | while read -r line;do
+curl 'https://dorm.nycu.edu.tw/login_online_detail.php?login_page=/auth_entry.php?authmeth=7' 2>&1 | while read -r line;do
 	if [ -n "$(echo \"$line\" | grep 本次)" ];then
 		continue
 	elif [ -n "$(echo \"$line\" | grep alignCenter)" ];then
